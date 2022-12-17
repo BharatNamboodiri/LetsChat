@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    
+    <title>Let's Chat</title>
+</head>
+<body background="gradientbg.jpg">
+    <div class="container">
+        <button id="logout" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+            <center>
+                <img src="">
+                <br>
+                <h1 class="header">	
+                    Let's Chat
+                    <sup>
+                        <img id="logopt2" src="Lets Chat-logos.jpeg" height="50px" width="50px">
+                    </sup>
+                </h1>
+                <h3 class="color_white" id="user_name"></h3>
+                <div class="form-group input_div_room_page">
+                    <label>#Add Room:</label>
+                    <input class="form-control" id="room_name" type="text" placeholder="#Room name">
+        
+                </div>
+                <button id="addroombtn" class="btn" onclick="addRoom()">Add Room</button>
+                <h3 class="color_white">Public Rooms</h3>
+            <div id="output"></div>
+            </center>
+        </div>
+        <script src="main.js"></script>
+</body>
+</html>
